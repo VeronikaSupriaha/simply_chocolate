@@ -1,9 +1,16 @@
-ul, ol {
+/*Common styles*/
+ul, 
+ol {
     list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
 }
 
 a {
     text-decoration: none;
+    color: currentColor;
+    font-style: normal;
 }
 
 button {
@@ -13,6 +20,63 @@ button {
 body {
     font-family: "Montserrat", sans-serif;
     font-style: normal;
+    background-color: #FAFAFA;
+}
+
+h1,
+h2,
+h3, 
+h4, 
+h5, 
+h6 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+img {
+    display: block;
+}
+
+.text-accent {
+    color: #FD9222;
+}
+
+.container {
+    width: 1168px;
+    padding-right: 16px;
+    padding-left: 16px;
+    margin: 0 auto;
+}
+
+.section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.section-title {
+    color:  #111;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.17;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+}
+
+
+
+/*header*/
+
+.page-navigation {
+    display: flex;
+    width: 980px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    column-gap: 24px;
 }
 
 .logo {
@@ -24,14 +88,181 @@ body {
 }
 
 .menu-link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
     color: #111;
-        font-size: 14px;
-        font-weight: 500;
-        line-height: 1.14;
-        letter-spacing: -0.02em;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: -0.02em;
 }
 
 .menu-link:hover,
 .menu-link:focus {
     color: #FD9222;
+}
+
+/*First Section*/
+
+.buy-now-btn {
+    display: block;
+    padding: 14px 40px;
+    align-items: flex-start;
+    gap: 14px;
+    border-radius: 100px;
+    background: #FD9222;
+    border: none;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.buy-now-btn:hover,
+.buy-now-btn:focus {
+    background-color: #FCF1E0;
+    color: #FD9222;
+}
+
+.how-made-link:hover,
+.how-made-link:focus {
+    color: #FD9222;
+}
+
+/*Our Benefits*/
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.benefits-section {
+    background-color :  #1E1823;
+    margin-top: 72px;
+    margin-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.benefits-list {
+    display: flex;
+}
+
+.benefits-item {
+    flex-basis: calc((100% - 2*70px) / 3);
+}
+
+.benefits-name {
+    color: #FFF; 
+    font-size: 18px;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 18px;
+}
+
+.benefits-text {
+    color: rgba(255, 255, 255, 0.70);    
+    font-size: 14px;      
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.02em;
+    width: 308px;
+}
+
+
+
+/*Ingridients*/
+
+.ingredients-section-title {
+    width: 412px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 28px;
+}
+
+.ingredients-text {
+    width: 486px;
+    color: #111;
+    text-align: center;      
+    font-size: 14px;   
+    font-weight: 400;
+    line-height: 1.3;
+    letter-spacing: -0.02em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+
+.ingredients-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 19px;
+}
+
+.ingredients-item {
+    padding: 32px 28px;
+    border-radius: 15px;
+    border: 1px solid #FD9222;
+    flex-basis: calc((100% - 3*19px) / 4);
+}
+
+.ingredients-item:nth-child(4n + 1) {
+    background-color: #FD9222;
+    color: #FFFFFF;
+}
+
+.ingredients-item:nth-child(even) {
+    background-color: #FFFFFF;
+}
+
+.ingredients-item:nth-child(4n + 3) {
+    background-color: #1E1823;
+    color: #FFFFFF;
+    border: #1E1823;
+}
+
+.ingredients-img {
+    margin-bottom: 36px;
+}
+
+.how-made-list {
+    background-color: #FFFFFF;
+    width: 516px;
+}
+
+/*How it's made*/
+
+.how-made-title {
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*Reviews*/
+
+.review-btn {
+    display: block;
+    padding: 14px 40px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 14px;
+    border-radius: 100px;
+    border: 1px solid #FD9222;
+    color: #111;     
+    font-size: 18px; 
+    font-weight: 600;   
+}
+
+.review-btn:hover,
+.review-btn:focus {
+    background-color: #FD9222;
+    color: #FFF;
 }

@@ -16,10 +16,11 @@
 <body>
     <!--Header-->
     <header class="main-header">
+        <div class="container">
         <nav class="page-navigation">
-            <a class="logo" href="./index.html"> <i>SIMPLY</i> CHOCOLATE </a>
+          <a class="logo" href="./index.html"> <i>SIMPLY</i> CHOCOLATE </a>
           <ul class="menu"> 
-          <li class="menu-item">
+           <li class="menu-item">
             <a class="menu-link" href="./index.html">Home</a>
           </li>
           <li class="menu-item">
@@ -30,89 +31,109 @@
           </li>
         </ul>
         </nav>
+        </div>
      </header>
    
 
     <main>
-        <!--Section 1-->
+        
+        <!-- First Section -->
+        
         <section>
+            <div class="container">
            <h1>Treat yourself or a loved one to
                our finest ingredients for a moment
                of pure delight!
            </h1>
-           <button type="button">Buy now</button>
-           <a href="#ingredients">How it’s made</a>
+           <button type="button" class="buy-now-btn">Buy now</button>
+           <a class="how-made-link" href="#ingredients">How it’s made</a>
            <a href="#benefits">scroll down</a>
+           </div>
         </section>
+       
         <!--Our benefits-->
-        <section id="benefits">
-            <h2>Our benefits</h2>
-            <ul> 
-                <li>
-                    <h3>Unsurpassed taste</h3>
-                    <p>Crafted with the finest quality cocoa beans and a dedication to perfection, each bite is a decadent experience that
+       
+        <section id="benefits" class="section benefits-section">
+            <div class="container">
+            <h2 class="visually-hidden">Our benefits</h2>
+            <ul class="benefits-list"> 
+                <li class="benefits-item">
+                    <h3 class="benefits-name">Unsurpassed taste</h3>
+                    <p class="benefits-text">Crafted with the finest quality cocoa beans and a dedication to perfection, each bite is a decadent experience that
                     simply cannot be matched. Savor the richness and complexity of our Unsurpassed Taste and discover a new level of
                     chocolate bliss.</p>
                 </li>
-                <li>
-                    <h3>Affordable price</h3>
-                    <p>Indulge in high-quality chocolate without breaking the bank with Simply Chocolate's selection of affordable treats.
+                <li class="benefits-item">
+                    <h3 class="benefits-name">Affordable price</h3>
+                    <p class="benefits-text">Indulge in high-quality chocolate without breaking the bank with Simply Chocolate's selection of affordable treats.
                     Enjoy mouth-watering truffles and velvety chocolate bars without sacrificing taste or quality. Browse our selection and
                     indulge in affordable luxury today.</p>
                 </li>
-                <li>
-                    <h3>Own production</h3>
-                    <p>We take pride in our own production process, ensuring that every step is carefully crafted to perfection. From selecting
+                <li class="benefits-item">
+                    <h3 class="benefits-name">Own production</h3>
+                    <p class="benefits-text">We take pride in our own production process, ensuring that every step is carefully crafted to perfection. From selecting
                     the finest ingredients to handcrafting each piece, our attention to detail is evident in every bite.</p>
                 </li>
         </ul>
+        </div>
         </section>
+        
         <!--Ingridients-->
-        <section id="ingredients">
-            <h2>IT ALL ADDS UP TO ONE EXCEPTIONAL TASTE SENSATION</h2>
-            <p>At Simply Chocolate, we believe that the secret to exceptional chocolate is in the details. From the sourcing of the
+        
+        <section id="ingredients" class="section">
+            <div class="container">
+            <h2 class="section-title ingredients-section-title">IT ALL ADDS UP TO ONE EXCEPTIONAL <span class="text-accent">TASTE</span> SENSATION </h2>
+            <p class="ingredients-text">At Simply Chocolate, we believe that the secret to exceptional chocolate is in the details. From the sourcing of the
             finest ingredients to the careful crafting of each individual piece, every step of our process adds up to one
             exceptional taste sensation.</p>
-            <ul>
-                <li>
-                    <img src="./images/ingridients/milk_chocolate.png" 
+            <ul class="ingredients-list">
+                <li class="ingredients-item">
+                    <img class="ingredients-img" 
+                          src="./images/ingridients/milk_chocolate.png" 
                           alt="Milk chocolate"
                           width="206"
                           height="160">
                     <h3>milk chocolate</h3>
                 </li>
-                <li>
-                    <img src="./images/ingridients/milk.png" 
+                <li class="ingredients-item">
+                    <img class="ingredients-img" 
+                         src="./images/ingridients/milk.png" 
                          alt="Milk"
                          width="206"
-                          height="160">
+                         height="160">
                     <h3>milk</h3>
                 </li>
-                <li>
-                    <img src="./images/ingridients/nuts.png" 
+                <li class="ingredients-item">
+                    <img class="ingredients-img"
+                         src="./images/ingridients/nuts.png" 
                          alt="Nuts"
-                          width="206"
-                          height="160" >
+                         width="206"
+                         height="160" >
                     <h3>nuts</h3>
                 </li>
-                <li>
-                    <img src="./images/ingridients/semi_sweet_chocolate.png" 
+                <li class="ingredients-item">
+                    <img class="ingredients-img"
+                         src="./images/ingridients/semi_sweet_chocolate.png" 
                          alt="Semi-sweet chocolate"
-                          width="206"
-                          height="160">
+                         width="206"
+                         height="160">
                     <h3>semi-sweet chocolate</h3>
                 </li>
             </ul>
+            </div>
         </section>
+
         <!--hOW IT’S made?-->
-        <section id="how-made" >
-            <h2>How it's made?</h2>
+
+        <section id="how-made" class="section" >
+            <div class="container">
+            <h2 class="section-title how-made-title">How it's <span class="text-accent">made?</span></h2>
             <img src="./images/how_its_made.jpg" 
              alt="chocolate making process"
              width="600"
              height="400">
              <h3>Try our chocolates today and discover the perfect balance of flavor</h3>
-             <ul>
+             <ul class="how-made-list">
                 <li>Heat the milk in a saucepan without bringing it to a boil. Add sugar and cocoa powder.</li>
                 <li>At the same time, prepare a water bath. Melt the butter on it.</li>
                 <li>"Mix" the milk mixture and already liquid butter. Mix thoroughly with a silicone spatula so that the mass becomes
@@ -120,10 +141,14 @@
                 <li>Heat the mixture over low heat, letting it barely boil.</li>
                 <li>Pour the chocolate into special containers (can be replaced with ice molds). Allow to cool and harden.</li>
              </ul>
+             </div>
         </section>
+
         <!--Reviews-->
-        <section id="reviews">
-            <h2>chocolate is loved</h2>
+        
+        <section id="reviews" class="section">
+            <div class="container">
+            <h2 class="section-title"> <span class="text-accent">chocolate</span> is loved</h2>
             <ul>
                 <li>
                     <img src="./images/reviews/victoria_dobrzhanska.png"
@@ -152,12 +177,15 @@
                     but crunchy.</p>
                 </li>
             </ul>
-            <button type="button">Leave a review</button>
+            <button class="review-btn" type="button">Leave a review</button>
+            </div>
         </section>
-
     </main>
-
-    <footer>
+    
+        <!--Page footer-->
+    
+        <footer>
+            <div class="container">
         <p>Chocolate a delicious cure for a bad day</p>
         <h2>Contact us</h2>
         <address>
@@ -173,7 +201,7 @@
                 <li>Chocolate is loved</li>
             </ul>
         </nav>
-
+        </div>
     </footer>
 </body>
 </html>
