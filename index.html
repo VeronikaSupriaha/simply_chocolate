@@ -39,15 +39,17 @@
         
         <!-- First Section -->
         
-        <section>
+        <section class="first-section">
             <div class="container">
-           <h1>Treat yourself or a loved one to
+           <h1 class="hero-title">Treat yourself or a loved one to
                our finest ingredients for a moment
                of pure delight!
            </h1>
+           <div class="hero-block">
            <button type="button" class="buy-now-btn">Buy now</button>
-           <a class="how-made-link" href="#ingredients">How it’s made</a>
-           <a href="#benefits">scroll down</a>
+           <a class="how-made-link" href="#ingredients">How it's made</a>
+           <a class="scroll" href="#benefits">scroll down</a>
+        </div>
            </div>
         </section>
        
@@ -58,18 +60,37 @@
             <h2 class="visually-hidden">Our benefits</h2>
             <ul class="benefits-list"> 
                 <li class="benefits-item">
+                    <div class="benefits-separator">
+                    <div class="benefits-icon">
+                        <svg  height="32" width="32" aria-label="taste icon">
+                            <use href="./images/icons.svg#icon-taste">
+                            </use>
+                        </svg>
+                    </div>
                     <h3 class="benefits-name">Unsurpassed taste</h3>
                     <p class="benefits-text">Crafted with the finest quality cocoa beans and a dedication to perfection, each bite is a decadent experience that
                     simply cannot be matched. Savor the richness and complexity of our Unsurpassed Taste and discover a new level of
                     chocolate bliss.</p>
+                    </div>
                 </li>
                 <li class="benefits-item">
+                    <div class="benefits-icon">
+                        <svg height="32" width="32" aria-label="price icon">
+                            <use href="./images/icons.svg#icon-price">
+                            </use>
+                        </svg>
+                    </div>
                     <h3 class="benefits-name">Affordable price</h3>
                     <p class="benefits-text">Indulge in high-quality chocolate without breaking the bank with Simply Chocolate's selection of affordable treats.
                     Enjoy mouth-watering truffles and velvety chocolate bars without sacrificing taste or quality. Browse our selection and
                     indulge in affordable luxury today.</p>
                 </li>
                 <li class="benefits-item">
+                    <div class="benefits-icon">
+                        <svg width="32" height="32" aria-label="own production icon">
+                            <use href="./images/icons.svg#icon-production"></use>
+                        </svg>
+                    </div>
                     <h3 class="benefits-name">Own production</h3>
                     <p class="benefits-text">We take pride in our own production process, ensuring that every step is carefully crafted to perfection. From selecting
                     the finest ingredients to handcrafting each piece, our attention to detail is evident in every bite.</p>
@@ -94,6 +115,17 @@
                           width="206"
                           height="160">
                     <h3>milk chocolate</h3>
+                    <div class="overlay">
+                        <h3 class="overlay-title">Milk chocolate</h3>
+                        <ul class="overlay-list">
+                            <li class="overlay-item-accent">chocolate</li>
+                            <li class="overlay-item">the benefits</li>
+                        </ul>
+                        <p class="overlay-text">Milk chocolate is a solid chocolate confectionery containing cocoa, sugar and milk. It is the most consumed type of
+                        chocolate. Chocolate was originally sold and consumed as a beverage in pre-Columbian times. Although four-fifths of all
+                        milk chocolate is sold in the United States and Europe.</p>
+
+                    </div>
                 </li>
                 <li class="ingredients-item">
                     <img class="ingredients-img" 
@@ -102,6 +134,16 @@
                          width="206"
                          height="160">
                     <h3>milk</h3>
+                    <div class="overlay">
+                        <h3 class="overlay-title">Milk</h3>
+                        <ul class="overlay-list">
+                            <li class="overlay-item-accent">milk</li>
+                            <li class="overlay-item">the benefits</li>
+                        </ul>
+                        <p class="overlay-text">Milk is a white liquid food produced by the mammary glands of mammals. It is the primary source of nutrition for young
+                        mammals (including breastfed human infants) before they are able to digest solid food.Early-lactation milk, which is
+                        called colostrum, contains antibodies that strengthen the immune system.</p>
+                    </div>
                 </li>
                 <li class="ingredients-item">
                     <img class="ingredients-img"
@@ -110,6 +152,16 @@
                          width="206"
                          height="160" >
                     <h3>nuts</h3>
+                    <div class="overlay">
+                        <h3 class="overlay-title">Nuts</h3>
+                        <ul class="overlay-list">
+                            <li class="overlay-item-accent">nuts</li>
+                            <li class="overlay-item">the benefits</li>
+                        </ul>
+                        <p class="overlay-text">Almonds, pistachios, and walnuts are some types of nuts that contain healthy nutrients. When eaten as part of a
+                        nutrient-dense diet, these 9 nuts may offer benefits such as reducing your risk of heart disease. They’re a good source
+                        of fiber, healthy fats, and plant protein. Plus, they’re great on their own.</p>
+                    </div>
                 </li>
                 <li class="ingredients-item">
                     <img class="ingredients-img"
@@ -118,21 +170,35 @@
                          width="206"
                          height="160">
                     <h3>semi-sweet chocolate</h3>
+                    <div class="overlay">
+                        <h3 class="overlay-title">semi - sweet chocolate</h3>
+                        <ul class="overlay-list">
+                            <li class="overlay-item-accent">sweet chocolate</li>
+                            <li class="overlay-item">the benefits</li>
+                        </ul>
+                        <p class="overlay-text">Semi-sweet chocolate has a cocoa solid content of 35 to 65%. One of the best ways to gain an understanding of this type
+                        of chocolate is to compare it to a different type of chocolate. Semisweet is darker than milk chocolate. In a taste
+                        comparison, it has a slightly bitter taste whereas milk chocolate is sweeter and more mellow.</p>
+                    </div>
                 </li>
             </ul>
             </div>
         </section>
 
-        <!--hOW IT’S made?-->
+        <!--hOW IT'S made?-->
 
-        <section id="how-made" class="section" >
+        <section id="how-made" class="section how-made-section" >
             <div class="container">
-            <h2 class="section-title how-made-title">How it's <span class="text-accent">made?</span></h2>
-            <img src="./images/how_its_made.jpg" 
+            <h2 class="section-title how-made-title">How it's <span class="text-accent">made?</span>
+            </h2>
+            <div class="how-made-container">
+            <img 
+             src="./images/how_its_made.jpg" 
              alt="chocolate making process"
              width="600"
-             height="400">
-             <h3>Try our chocolates today and discover the perfect balance of flavor</h3>
+             height="400"/>
+             <div class="how-made-list-container">
+             <h3 class="how-made-list-title">Try our chocolates today and discover the perfect balance of flavor</h3>
              <ul class="how-made-list">
                 <li>Heat the milk in a saucepan without bringing it to a boil. Add sugar and cocoa powder.</li>
                 <li>At the same time, prepare a water bath. Melt the butter on it.</li>
@@ -141,6 +207,8 @@
                 <li>Heat the mixture over low heat, letting it barely boil.</li>
                 <li>Pour the chocolate into special containers (can be replaced with ice molds). Allow to cool and harden.</li>
              </ul>
+            </div>
+            </div>
              </div>
         </section>
 
@@ -149,7 +217,7 @@
         <section id="reviews" class="section">
             <div class="container">
             <h2 class="section-title"> <span class="text-accent">chocolate</span> is loved</h2>
-            <ul>
+            <ul class="review-list">
                 <li>
                     <img src="./images/reviews/victoria_dobrzhanska.png"
                      alt="Victoria Dobrzhanska"

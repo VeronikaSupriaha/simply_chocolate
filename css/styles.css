@@ -105,6 +105,34 @@ img {
 
 /*First Section*/
 
+.first-section {
+    background-image: linear-gradient(rgba(17, 17, 17, 0.40), rgba(17, 17, 17, 0.40)), 
+    url(/images/background_for_first_section.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+    width: 1136px;
+    padding: 382px 40px 40px 40px;
+    border-radius: 30px;
+}
+
+.hero-block {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.hero-title {
+    margin-bottom: 32px;
+    width: 484px;
+    color: #FFF;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.21;
+    letter-spacing: -0.03em;
+}
+
 .buy-now-btn {
     display: block;
     padding: 14px 40px;
@@ -123,6 +151,27 @@ img {
 .buy-now-btn:focus {
     background-color: #FCF1E0;
     color: #FD9222;
+}
+
+.scroll {
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.29;
+    letter-spacing: -0.03em;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    transition: color 250ms linear;
+}
+
+.how-made-link {
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 14px 40px;
+    border-radius: 100px;
+    border: 1px solid #FFF;
 }
 
 .how-made-link:hover,
@@ -155,10 +204,23 @@ img {
 
 .benefits-list {
     display: flex;
+    column-gap: 88px;
 }
 
 .benefits-item {
+    position: relative;
     flex-basis: calc((100% - 2*70px) / 3);
+}
+
+.benefits-item:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    height: 50%;
+    width: 1px;
+    transform: translateY(-50%);
+    right: -18px;
+    background-color: rgba(255, 255, 255, 0.50);
 }
 
 .benefits-name {
@@ -178,6 +240,16 @@ img {
     width: 308px;
 }
 
+.benefits-icon {
+    width: 62px;
+    height: 62px;
+    border-radius: 365px;
+    border: 1px solid rgba(255, 255, 255, 0.50);
+    margin-bottom: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
 /*Ingridients*/
@@ -213,6 +285,8 @@ img {
     border-radius: 15px;
     border: 1px solid #FD9222;
     flex-basis: calc((100% - 3*19px) / 4);
+    position: relative;
+    overflow: hidden;
 }
 
 .ingredients-item:nth-child(4n + 1) {
@@ -234,10 +308,70 @@ img {
     margin-bottom: 36px;
 }
 
-.how-made-list {
-    background-color: #FFFFFF;
-    width: 516px;
+.overlay {
+    position: absolute;
+    top:0;
+    left: 0;
+    background-color: #FFF;
+    color: #111111;
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    overflow: auto;
+    transform: translateY(100%);
+    transition: transform 250ms linear;
 }
+
+.ingredients-item:hover .overlay {
+    transform: translateY(0);
+}
+
+.overlay-title {
+    color: #111;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.overlay-list {
+    display: flex;
+    column-gap: 6px;
+    margin-bottom: 14px;
+}
+
+.overlay-item-accent {
+    padding: 6px 16px;
+    color: #FFF;
+    font-size: 10px; 
+    font-weight: 400;
+    line-height: 1.2;
+    border-radius: 35px;
+    background-color:  #FD9222;
+}
+
+.overlay-item {
+    border-radius: 35px;
+    border: 1px solid  #FD9222;
+    background-color:  #FAFAFA;
+    padding: 6px 16px;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.overlay-text {
+    width: 230px;  
+    color: #111;              
+    font-size: 14px;       
+    font-weight: 400;
+    line-height: 1.29;        
+    letter-spacing: -0.02em;
+}
+
+
 
 /*How it's made*/
 
@@ -246,6 +380,36 @@ img {
     margin-left: auto;
     margin-right: auto;
 }
+
+.how-made-container {
+    display: flex;
+    column-gap: 20px;
+    flex-basis: calc((100% - 20px) / 1);
+}
+
+.how-made-list-title {
+    width: 350px;
+    color: #111;    
+    font-size: 18px;    
+    font-weight: 600;
+    line-height: 1.3;
+    margin-bottom: 28px;
+}
+
+.how-made-list-container {
+    padding: 32px;
+    background-color: #FFFFFF;
+    width: 516px;
+    border-radius: 15px;
+}
+
+.how-made-list {
+    margin-top: 0;
+    margin-left: 0;
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
 /*Reviews*/
 
 .review-btn {
@@ -259,10 +423,16 @@ img {
     color: #111;     
     font-size: 18px; 
     font-weight: 600;   
+    margin-bottom: 50px;
 }
 
 .review-btn:hover,
 .review-btn:focus {
     background-color: #FD9222;
     color: #FFF;
+}
+
+.review-list {
+    display: flex;
+    margin-bottom: 50px;
 }
